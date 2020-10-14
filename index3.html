@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoplight</title>
+    <style>
+
+        html{
+            background: linear-gradient( to top, #08f, #fff) ;
+            margin: 0 auto;
+            padding: 40px;
+            height: 100%;
+            width: 170px;
+        }
+
+
+        .background{
+            background:black;
+            width: 100px;
+            height: 250px;
+            margin: 100% auto;
+            padding-top: 5px;
+        }
+
+        .red{
+            background: red;
+            margin: 5px auto;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            animation: 13s red infinite;
+            box-shadow: 0 0 10px 10px red;
+        }
+
+        .yellow{
+            background: yellow;
+            margin: 5px auto;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            animation: 13s yellow infinite;
+            box-shadow: 0 0 10px 10px yellow;
+        }
+
+        .green{
+            background: 5px green;
+            margin: auto;
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            animation: 13s green infinite;
+            box-shadow: 0 0 10px 10px green;
+        }
+
+        @keyframes red{
+            0%{opacity: .1;}
+            10%{opacity: .1;}
+            20%{opacity: .1;}
+            40%{opacity: .1;}
+            60%{opacity: 1;}
+            80%{opacity: 1;}
+            100%{opacity: 1;}
+        }
+
+        @keyframes yellow{
+            0%{opacity: .1;}
+            20%{opacity: .1;}
+            40%{opacity: 1;}
+            50%{opacity: .1;}
+            60%{opacity: .1;}
+            80%{opacity: .1;}
+            100%{opacity: .1;}
+        }
+
+        @keyframes green{
+            0%{opacity: 1;}
+            20%{opacity: 1;}
+            40%{opacity: .1;}
+            50%{opacity: .1;}
+            60%{opacity: .1;}
+            80%{opacity: .1;}
+            100%{opacity: .1;}
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="background">
+    <div id="light" class="red"></div>
+    <div id="light" class="yellow"></div>
+    <div id="light" class="green"></div>
+</div>
+
+<script src="/JavaScript/trafficLight.js"></script>
+
+
+</body>
+</html>
